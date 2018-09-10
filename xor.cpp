@@ -7,10 +7,8 @@ int main() {
     std::string x, key;
     std::string cipher="";
     int value;
-    //Ingresamos la clave:
     std::getline(std::cin,key);
     std::bitset<8> clave (key);
-    //Ingresamos la cadena de texto:
     std::getline(std::cin,x);
     std::transform(x.begin(), x.end(),x.begin(), ::toupper);
     for(int i=0; i<x.length();i++) {
